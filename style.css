@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Economica&family=Noto+Sans+NKo+Unjoined:wght@600&display=swap");
+
+/* Add filters: https://www.w3schools.com/cssref/css3_pr_filter.asp */
+/* Make your own favicon: https://favicon.io/ */
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: block;
+  background-image: url("images/discos.gif");
+  background-color: black;
+  overflow: hidden;
+}
+
+/* build your layout */
+.row3 {
+  display: none;
+  height: 25%;
+  width: 100%;
+}
+.row4 {
+  display: none;
+  height: 25%;
+  width: 100%;
+}
+.row5 {
+  display: none;
+  height: 25%;
+  width: 100%;
+}
+.row6 {
+  display: none;
+  height: 25%;
+  width: 100%;
+}
+.row1 {
+  display: flex;
+  height: 50%;
+  width: 100%;
+}
+.row2 {
+  display: flex;
+  height: 50%;
+  width: 100%;
+}
+.smallBox {
+  height: 100%;
+  width: 25%;
+}
+.smallBoxFinnPB {
+  height: 100%;
+  width: 25%;
+}
+.largeBox {
+  height: 100%;
+  width: 50%;
+}
+.logo {
+  height: 80%;
+  width: 100%;
+  background-color: #5b8cce;
+}
+.button {
+  height: 100%;
+  width: 33.333%;
+  display: flex;
+  background-color: rgb(211, 125, 13);
+}
+.reset {
+  height: 100%;
+  width: 33.333%;
+  display: flex;
+  background-color: rgb(128, 211, 160);
+}
+.spin {
+  height: 100%;
+  width: 33.333%;
+  display: flex;
+  background-color: rgb(140, 128, 211);
+}
+.UnderBox {
+  height: 20%;
+  width: 100%;
+  display: flex;
+}
+.bigBox {
+  height: 100%;
+  width: 80%;
+  display: none;
+}
+.bigBoxSide {
+  height: 100%;
+  width: 20%;
+  display: none;
+}
+.buttonBox {
+  height: 33.333%;
+  width: 100%;
+  display: none;
+  background-color: rgb(236, 138, 9);
+}
+.resetBox {
+  height: 33.333%;
+  width: 100%;
+  display: none;
+  background-color: rgb(123, 206, 155);
+}
+.spinBox {
+  height: 33.333%;
+  width: 100%;
+  display: flex;
+  background-color: rgb(140, 128, 211);
+}
+.rotate {
+  animation-name: example;
+  animation-duration: 22s;
+}
+@keyframes example {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(4330deg);
+  }
+}
+.clickable {
+  filter: brightness(85%) drop-shadow(1px 3px 2px);
+}
+.clickable:hover {
+  cursor: pointer;
+  filter: brightness(100%) drop-shadow(1px 3px 2px);
+}
+/* add satisfaction to click */
+.clickable:active {
+  filter: drop-shadow(0px 0px 3px);
+  transform: scale(0.98);
+}
+.glow {
+  filter: brightness(85%);
+}
+.glow:hover {
+  cursor: pointer;
+  color: rgb(46, 46, 46);
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fffb00,
+      0 0 40px #fffb00, 0 0 50px #fffb00, 0 0 60px #fffb00, 0 0 70px #fffb00;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #dce497, 0 0 40px #dce497,
+      0 0 50px #dce497, 0 0 60px #dce497, 0 0 70px #dce497, 0 0 80px #dce497;
+  }
+}
+
+/* control your content */
+img {
+  max-height: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+.jb {
+  max-height: 70%;
+  max-width: 70%;
+  margin: 0;
+}
+.center-content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+h1 {
+  text-align: center;
+  font-size: 200%;
+  margin: 0%;
+  font-family: "Economica", sans-serif;
+}
+
+/* add effects on click (UX) */
+
+.translucent {
+  opacity: 0.5;
+}
+.disappear {
+  display: none;
+}
+
+/* colors */
+.logoblue {
+  background-color: #5b8cce;
+}
+.blue {
+  background-color: #306ecdff;
+}
+.yellow {
+  background-color: #ffb600ff;
+}
+.green {
+  background-color: #14b785ff;
+}
+.iceBlue {
+  background-color: #20ddffff;
+}
+.red {
+  background-color: #951111ff;
+}
+.pink {
+  background-color: #fe76b9ff;
+}
+.prismo {
+  background-color: #f9ed51ff;
+}
+.rain {
+  background-color: #a64d79ff;
+}
+.peppermint {
+  background-color: #cc0000ff;
+}
+.fern {
+  background-color: #38761dff;
+}
+.lsp {
+  background-color: #8e7cc3ff;
+}
+.lich {
+  background-color: #434343ff;
+}
+
+.black {
+  background-color: #000000;
+}
+.light-grey {
+  background-color: #a9a9a9;
+}
+.dark-grey {
+  background-color: #707070;
+}
+.white {
+  background-color: ghostwhite;
+}
+.selectedfin {
+  background-color: #182d5c;
+}
+.selectedjake {
+  background-color: #a88e18;
+}
+.selectedbmo {
+  background-color: #147550;
+}
+.selectedice {
+  background-color: #4684a3;
+}
+.selectedmarcy {
+  background-color: #410d0d;
+}
+.selectedpb {
+  background-color: #a0418d;
+}
+.selected {
+  background-color: #fefae0;
+}
+.selectedprismo {
+  background-color: #c0ab20;
+}
+.selectedrain {
+  background-color: #75275f;
+}
+.selectedfern {
+  background-color: #0a2e0e;
+}
+.selectedlsp {
+  background-color: #0a2e0e;
+}
+.selectedlich {
+  background-color: #000000;
+}
+.selectedpeppermint {
+  background-color: #530707;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    display: block;
+  }
+  .row3 {
+    display: flex;
+  }
+  .row4 {
+    display: flex;
+  }
+  .row5 {
+    display: flex;
+  }
+  .row6 {
+    display: flex;
+  }
+  .row1 {
+    display: none;
+  }
+  .row2 {
+    display: none;
+  }
+  .largeBox {
+    width: 50%;
+  }
+  .bigBoxSide {
+    display: block;
+  }
+  h1 {
+    font-size: 200%;
+  }
+}
+/* want to make something happen when you hover?
+img:hover {
+  cursor: pointer;
+}
+*/

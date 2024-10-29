@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="images/db.ico" rel="icon" type="image/x-icon" />
+    <title>Adventure Time Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="row3">
+      <div class="bigBox white center-content">
+        <img
+          class=""
+          id="logoSmall"
+          src="images/logoimages.png"
+          onclick="playTheme()"
+        />
+      </div>
+      <div class="bigBoxSide white">
+        <div class="resetBox center-content" id="resetBox" onclick="resetAll()">
+          <h1 class="glow" id="">Page 1</h1>
+        </div>
+        <div
+          class="buttonBox center-content"
+          id="buttonpage"
+          onclick="newpage()"
+        >
+          <h1 class="glow" id="">Page 2</h1>
+        </div>
+        <div class="spinBox center-content" id="spin" onclick="turnAll()">
+          <h1 class="glow" id="">DANCE</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="row4">
+      <div class="largeBox blue center-content" id="fbox">
+        <img
+          class="clickable"
+          id="finn"
+          src="images/FinnAdventureTime-removebg-preview.png"
+          onclick="addFinnPhoto1()"
+        />
+      </div>
+      <div class="largeBox pink center-content" id="pbbox1">
+        <img
+          class="clickable"
+          onclick="addPBPhoto1()"
+          id="pb"
+          src="images/pbs.png"
+        />
+      </div>
+    </div>
+
+    <div class="row5">
+      <div class="largeBox yellow center-content" id="jakeBox1">
+        <img
+          class="clickable"
+          onclick="addJakePhoto1()"
+          id="jake"
+          src="images/jakes.png"
+        />
+      </div>
+      <div class="largeBox green center-content" id="bmoBox1">
+        <img
+          class="clickable"
+          onclick="addBMOPhoto1()"
+          id="bmo"
+          src="images/Bmo.png"
+        />
+      </div>
+    </div>
+
+    <div class="row6">
+      <div class="largeBox iceBlue center-content" id="iceBox1">
+        <img
+          class="clickable"
+          onclick="addIcemanPhoto1()"
+          id="iceman"
+          src="images/iceman.png"
+        />
+      </div>
+      <div class="largeBox red center-content" id="vampBox1">
+        <img
+          class="clickable"
+          onclick="addMarcyPhoto1()"
+          id="marcy"
+          src="images/marcys1.png"
+        />
+      </div>
+    </div>
+
+    <div class="row1">
+      <div class="smallBoxFinnPB blue center-content" id="finnbox">
+        <img
+          class="clickable"
+          id="finn1"
+          src="images/FinnAdventureTime-removebg-preview.png"
+          onclick="addFinnPhoto()"
+        />
+      </div>
+      <div class="largeBox white">
+        <div class="logo center-content">
+          <img
+            class=""
+            id="logo"
+            src="images/logoimages.png"
+            onclick="playTheme()"
+          />
+        </div>
+        <div class="UnderBox light-grey">
+          <div class="reset center-content" id="reset" onclick="resetAll()">
+            <h1 class="glow" id="">Page 1</h1>
+          </div>
+          <div
+            class="button center-content"
+            id="buttonpage"
+            onclick="newpage()"
+          >
+            <h1 class="glow" id="">Page 2</h1>
+          </div>
+          <div class="spin center-content" id="spin" onclick="turnAll()">
+            <h1 class="glow" id="">DANCE</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="smallBoxFinnPB pink center-content" id="pbbox">
+        <img
+          class="clickable jb"
+          onclick="addPBPhoto()"
+          id="pb1"
+          src="images/pbs.png"
+        />
+      </div>
+    </div>
+
+    <div class="row2">
+      <div class="smallBox yellow center-content" id="jakeBox">
+        <img
+          class="clickable jb"
+          onclick="addJakePhoto()"
+          id="jake1"
+          src="images/jakes.png"
+        />
+      </div>
+      <div class="smallBox green center-content" id="bmoBox">
+        <img
+          class="clickable jb"
+          onclick="addBMOPhoto()"
+          id="bmo1"
+          src="images/Bmo.png"
+        />
+      </div>
+      <div class="smallBox iceBlue center-content" id="iceBox">
+        <img
+          class="clickable"
+          onclick="addIcemanPhoto()"
+          id="iceman1"
+          src="images/iceman.png"
+        />
+      </div>
+      <div class="smallBox red center-content" id="vampBox">
+        <img
+          class="clickable jb"
+          onclick="addMarcyPhoto()"
+          id="marcy1"
+          src="images/marcys1.png"
+        />
+      </div>
+
+      <!-- Change the image source when the user clicks -->
+    </div>
+    <script src="script.js"></script>
+    <audio src="Audio/themes.mp3" type="audio/mp3" id="theme"></audio>
+    <audio src="Audio/pbaudios.mp3" type="audio/mp3" id="pbaudio"></audio>
+    <audio src="Audio/finnaudios.mp3" type="audio/mp3" id="finnaudio"></audio>
+    <audio src="Audio/jakeaudios.mp3" type="audio/mp3" id="jakeaudio"></audio>
+    <audio src="Audio/BMOaudios.mp3" type="audio/mp3" id="BMOaudio"></audio>
+    <audio src="Audio/iceaudios.mp3" type="audio/mp3" id="iceaudio"></audio>
+    <audio src="Audio/marcyaudios.mp3" type="audio/mp3" id="marcyaudio"></audio>
+    <audio
+      src="Audio/prismoaudios.mp3"
+      type="audio/mp3"
+      id="prismoaudio"
+    ></audio>
+    <audio
+      src="Audio/peppermintaudios.mp3"
+      type="audio/mp3"
+      id="peppermintaudio"
+    ></audio>
+    <audio src="Audio/rainaudios.mp3" type="audio/mp3" id="rainaudio"></audio>
+    <audio src="Audio/fernaudios.mp3" type="audio/mp3" id="fernaudio"></audio>
+    <audio src="Audio/lspaudios.mp3" type="audio/mp3" id="lspaudio"></audio>
+    <audio src="Audio/lichaudios.mp3" type="audio/mp3" id="lichaudio"></audio>
+    <audio src="Audio/dances.mp3" type="audio/mp3" id="dance"></audio>
+  </body>
+</html>
